@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        #box{
+            height:300px;
+            width:300px;
+            background-color: blueviolet;
+            margin:200px 0 0 100px;
+            border:2px solid black;
+        }
+    </style>
+    <script>
+        function eventCall(){
+            alert('These are the mouse event');
+        }
+        function double(){
+            alert('The mouse event');
+        }
+        function contextmenu(){
+            alert('heyy everyone');
+        }
+    </script>
+</head>
+<body>
+    <div id="box" onclick="eventCall()">This is Section.</div>
+    <div id="box" ondblclick="double()">Hii everyone</div>
+    <div id="box" oncontextmenu="contextmenu()">shhh!</div>
+</body>
+</html>
